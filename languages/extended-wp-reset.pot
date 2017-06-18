@@ -1,0 +1,130 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-18 13:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Name of the plugin
+#: extended-wp-reset.php:85
+msgid "Extended WP Reset"
+msgstr ""
+
+#: extended-wp-reset.php:168
+#, php-format
+msgid ""
+"[%s] One or more errors occurred while trying to reset your WordPress "
+"instance: %s"
+msgstr ""
+
+#: extended-wp-reset.php:183
+#, php-format
+msgid "[%s] An error occurred while trying to reset your WordPress instance"
+msgstr ""
+
+#: extended-wp-reset.php:212 extended-wp-reset.php:219
+#, php-format
+msgid ""
+"[%s] Your WordPress installation has been successfully reset to its defaults."
+msgstr ""
+
+#: extended-wp-reset.php:216
+#, php-format
+msgid ""
+"[%s] Your blog <strong>%s</strong> has been successfully reset to its "
+"defaults."
+msgstr ""
+
+#: extended-wp-reset.php:230
+#, php-format
+msgid "[%s] An error occurred"
+msgstr ""
+
+#: extended-wp-reset.php:242
+#, php-format
+msgid ""
+"<strong>[%s] WordPress has been reset back to defaults. The user \"%s\" was "
+"recreated with their previous password.</strong>"
+msgstr ""
+
+#: extended-wp-reset.php:289
+msgid "Extended WordPress Reset"
+msgstr ""
+
+#: inc/index.php:12
+msgid ""
+"Invalid confirmation. Please type 'ext-wp-reset' in the confirmation field."
+msgstr ""
+
+#: inc/index.php:15
+msgid "Invalid nonce. Please try again."
+msgstr ""
+
+#: inc/index.php:26
+#, php-format
+msgid ""
+"Your user '<strong>%s</strong>' will be recreated using your <strong>current "
+"password</strong>."
+msgstr ""
+
+#: inc/index.php:27
+msgid ""
+"This plugin <strong>will be automatically reactivated</strong> after the "
+"reset operation."
+msgstr ""
+
+#: inc/index.php:31
+msgid "network"
+msgstr ""
+
+#: inc/index.php:31
+msgid "blog's"
+msgstr ""
+
+#: inc/index.php:32
+#, php-format
+msgid "After completing this action you will be taken to your %s dashboard."
+msgstr ""
+
+#: inc/index.php:38
+msgid "Reset your WordPress installation"
+msgstr ""
+
+#: inc/index.php:40 inc/index.php:43
+msgid ""
+"Type <strong>ext-wp-reset</strong> in the field to confirm the action and "
+"then click the Reset button:"
+msgstr ""
+
+#: inc/index.php:45
+msgid "Reset"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"This plugin is based on WP Dev's <a href=\"https://wordpress.org/plugins/wp-"
+"reset/\" target=\"_blank\">WP Reset</a> plugin. In comparison to the "
+"original version, this plugin offers support for MultiSite installations and "
+"also correctly deletes tables that have foreign key constraints. This plugin "
+"does not delete any other plugins, files or themes that exist on your "
+"WordPress installation, it only deletes/empties the tables from the database "
+"thus reverting WordPress to its default state. The current user will also be "
+"recreated using the same user name and password."
+msgstr ""
+
+#. Author of the plugin
+msgid "wp-kitten"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/wp-kitten/"
+msgstr ""
