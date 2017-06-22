@@ -62,10 +62,14 @@ if ( is_admin() ) {
 		 */
 		public function __construct()
 		{
-			$network = ( is_network_admin() ? 'network_' : '' );
-			add_action( "{$network}admin_menu", array( $this, 'addPluginPage' ), 0 );
-			add_action( 'admin_init', array( $this, 'resetWP' ), 0 );
-			add_action( 'init', array( $this, 'loadTextDomain' ) );
+			//#! Make sure this is an administrator user
+			if( current_user_can( 'remove_users' ) ) {
+
+				$network = ( is_network_admin() ? 'network_' : '' );
+				add_action( "{$network}admin_menu", array( $this, 'addPluginPage' ), 0 );
+				add_action( 'admin_init', array( $this, 'resetWP' ), 0 );
+				add_action( 'init', array( $this, 'loadTextDomain' ) );
+			}
 		}
 
 		/**
@@ -118,6 +122,10 @@ if ( is_admin() ) {
 				return;
 			}
 
+			//#! Make sure this is an administrator user
+			if( ! current_user_can( 'remove_users' ) ) {
+				return;
+			}
 
 			//#! If the request is coming from the network page
 			$networkReset = ( is_network_admin() || ( $this->isWPMU() && is_main_site() ) );
